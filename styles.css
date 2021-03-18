@@ -160,16 +160,43 @@ main{
 .leagues-name{
     display: flex;
 }
-.container{
+.leagues_list{
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+}
+.leagues_list li{
+    font-size: 10px;
+}
+.match-container{
+    display: flex;
+    flex-direction: column;
+}
+.results h4{
+    background-color: rgb(184, 235, 174);
+}
+.container,
+.results,
+.result-container,
+.match-container{
     width: 800px;
     min-height: 100vh;
 }
-.match{
+.match_details{
+    
+}
+.match,
+.match-end{
     display: flex;
     width: 800px;
     height: 30px;
-    border-bottom: 0.1px dotted grey;
+    border-bottom: 0.1px dashed grey;
     align-items: center;
+    justify-content: space-evenly;
+    
+}
+.match-end{
+    background-color: rgba(222, 247, 176, 0.2);
 }
 .league{
     display: flex;
@@ -193,21 +220,27 @@ main{
     font-size: 12px;
 }
 .time{
-    background-color: aliceblue;
+    background-color: rgb(229, 226, 226);
     color: black;
-    width: 40px;
-    height: 20px;
+    width: 50px;
+    height: 28px;
+    text-align: center;
 }
 .game{
-    width: 550px;
+    width: 650px;
     height: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+.score{
+    width: 80px;
+    text-align: center;
+}
 .home_team, .away_team{
     display: flex;
-    width: 200px;
+    width: 300px;
+    flex-wrap: wrap;
 }
 .home_team{
     justify-content: flex-end;
